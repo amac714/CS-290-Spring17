@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment HTML/CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Table -->
+    <table>
+        <caption>NBA Pacific Division Starting Lineups</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Los Angeles Clippers</th>
+                <th>Los Angeles Lakers</th>
+                <th>Golden State Warriors</th>
+                <th>Sacramento Kings</th>
+                <th>Phoenix Suns</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <!-- First row -->
+                <td class="player">Point Guard</td>
+                <td id="clips">Chris Paul</td>
+                <td>D'Angelo Russell</td>
+                <td id="warrior">Stephen Curry</td>
+                <td>Darren Collison</td>
+                <td>Eric Bledsoe</td>
+            </tr>
+            <tr>
+                <!-- Second row -->
+                <td class="player">Shooting Guard</td>
+                <td id="clips">JJ Redick</td>
+                <td>Nick Young</td>
+                <td id="warrior">Klay Thompson</td>
+                <td>Buddy Hield</td>
+                <td>Devin Booker</td>
+
+            </tr>
+            <tr>
+                <!-- Third row -->
+                <td class="player">Small Forward</td>
+                <td id="clips">Luc Richard Mbah a Moute</td>
+                <td>Brandom Ingram</td>
+                <td id="warrior">Kevin Durant</td>
+                <td>Rudy Gay</td>
+                <td>TJ Warren</td>
+            </tr>
+            <tr>
+                <!-- Fourth row -->
+                <td class="player">Power Forward</td>
+                <td id="clips">Blake Griffin</td>
+                <td>Julius Randle</td>
+                <td id="warrior">Draymond Green</td>
+                <td>Skal Labissiere</td>
+                <td>Marquese Chriss</td>
+            </tr>
+            <tr>
+                <!-- Fifth row -->
+                <td class="player">Center</td>
+                <td id="clips">Deandre Jordan</td>
+                <td>Ivica Zubac</td>
+                <td id="warrior">Javale McGee</td>
+                <td>Willy Cauley-Stein</td>
+                <td>Tyson Chandler</td>
+            </tr>
+            <tr id="footer">
+                <!-- Footer -->
+                <td colspan="2">Footer 1</td>
+                <td colspan="4">Footer 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- An Ordered List -->
+    <h1>My Favorite Foods</h1>
+    <ol>
+        <li>Burritos</li>
+        <li>Pizza</li>
+        <li>Fried Rice</li>
+        <li>Fried Chicken</li>
+        <li>Poke</li>
+    </ol>
+
+    <!-- Div -->
+    <div class="outer-content" align="left">
+        <div class="inner-content" align="center">
+            Some Content
+        </div>
+    </div>
+
+    <!-- Forms -->
+
+    <!-- Get method -->
+    <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php"
+          method="get">
+        <fieldset>
+            <legend>some GET data</legend>
+
+            <fieldset>
+                <label>Text Here:
+                    <input type="text" name="text_input" maxlength="100" placeholder="Text..">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Number Here:
+                    <input type="number" name="numerical_input" maxlength="100" placeholder="Number..">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Password Here:
+                    <input type="password" name="password_input" maxlength="100" placeholder="Password..">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Choose One: <br>
+                    <input type="radio" name="candy" value="Snickers"> Snickers <br>
+                    <input type="radio" name="candy" value="Skittles"> Skittles <br>
+                    <input type="radio" name="candy" value="Mentos"> Mentos <br>
+
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+
+    </form>
+
+    <!-- Post method -->
+    <form action="http://classes.engr.oregonstate.edu/eecs/winter2015/cs290-400/tools/class-content/form_tests/check_request.php"
+          method="post">
+        <fieldset>
+            <legend>some POST data</legend>
+
+            <fieldset>
+                <label>Text Here:
+                    <input type="text" name="text_input" maxlength="100" placeholder="Text..">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Number Here:
+                    <input type="number" name="numerical_input" maxlength="100" placeholder="Number..">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Password Here:
+                    <input type="password" name="password_input" maxlength="100" placeholder="Password..">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label>Choose One: <br>
+                    <input type="radio" name="candy" value="Snickers"> Snickers <br>
+                    <input type="radio" name="candy" value="Skittles"> Skittles <br>
+                    <input type="radio" name="candy" value="Mentos"> Mentos <br>
+
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+
+    </form>
+</body>
+</html>
