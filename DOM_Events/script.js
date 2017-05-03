@@ -6,12 +6,12 @@
 //current position of highlighted cell
 var row = 1;
 var col = 1;
-
+var body = document.body;
 
 //creating table
 function createTable() {
 
-    var body = document.body;
+    //var body = document.body;
     var tbl = document.createElement('table');
     var tblBody = document.createElement('tbody');
     tbl.setAttribute('border', 1);
@@ -93,7 +93,7 @@ function moveCell(direction) {
 //adding buttons
 function addButtons() {
     var btnLabel = ["Up", "Down", "Left", "Right", "Mark Cell"];
-    var body = document.body;
+    //var body = document.body;
 
     for(var i = 0; i < btnLabel.length; i++) {
         var button = document.createElement('Button');
