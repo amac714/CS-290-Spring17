@@ -2,12 +2,6 @@
  * Created by airmac on 5/2/17.
  */
 
-var body = document.body;
-var tbl = document.createElement('table');
-var tblBody = document.createElement('tbody');
-tbl.setAttribute('border', 1);
-tbl.style.border = '1px solid black';
-tbl.style.width = '50%';
 
 //current position of highlighted cell
 var row = 1;
@@ -16,6 +10,14 @@ var col = 1;
 
 //creating table
 function createTable() {
+
+    var body = document.body;
+    var tbl = document.createElement('table');
+    var tblBody = document.createElement('tbody');
+    tbl.setAttribute('border', 1);
+    tbl.style.border = '1px solid black';
+    tbl.style.width = '50%';
+
     for (var i = 0; i < 4; i++) {
         var tr = document.createElement('tr');
         for (var j = 0; j < 4; j++) {
