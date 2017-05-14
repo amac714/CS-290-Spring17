@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Asynchronously Submit via POST</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Enter your Information</legend>
+        <fieldset>
+            <label>Name:
+                <input type="text" id="userName" name="text_input" maxlength="100" placeholder="First and Last">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>Age:
+                <input type="number" id="userAge" name="numerical_input" maxlength="100" placeholder="age">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>Major:
+                <input type="text" id="major" name="text_input" maxlength="100" placeholder="ex: Computer Science">
+            </label>
+        </fieldset>
+        <input type="submit" id="submitInfo">
+    </fieldset>
+</form>
+
+<div>
+    <h2>Results</h2>
+    <ul>
+        <li><span>Name: </span><span class="userName"></span></li>
+        <li><span>Age: </span><span class="userAge"></span></li>
+        <li><span>Major: </span><span class="major"></span></li>
+    </ul>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

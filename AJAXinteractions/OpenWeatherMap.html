@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenWeatherMap</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Check Weather</legend>
+        <fieldset>
+            <legend>by Zip Code</legend>
+            <label for="zip"></label>
+            <input type="text" name="userZip" id="zip" placeholder="zip code">
+        </fieldset>
+        <div>
+            <h5>Or</h5>
+        </div>
+        <fieldset>
+            <legend>by City</legend>
+            <label for="city"></label>
+            <input type="text" name="userCity" id="city" placeholder="city">
+        </fieldset>
+            <input type="submit" id="submitWeather">
+    </fieldset>
+</form>
+
+<div>
+    <h2>Results</h2>
+    <ul>
+        <li><span>City: </span><span id="cityName"></span></li>
+        <li><span>Temperature: </span><span id="temp"></span></li>
+        <li><span>Humidity: </span><span id="humid"></span></li>
+    </ul>
+</div>
+
+<script src="weather.js"></script>
+</body>
+</html>
