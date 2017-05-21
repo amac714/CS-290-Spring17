@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is an API?</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="column">
+
+            <h1>What is an API?</h1>
+            <h5>Before moving on to the Marvel Comics API, let's learn more about APIs.</h5>
+            <p>API stands for Application Programming Interface. It's a fancy sounding word, but it's a relatively simple concept. Essentially, an API <br>
+                serves as an <em>interface</em> between software programs and facilitates their interaction. Think about how two people who speak different <br>
+                languages can communicate with each other. Well, they would need a translator right? The translator, whether it is another person or a device, <br>
+                serves as an interface for the two people to communicate. In this case, the translator is the API!</p>
+            <p>So, what are we going to do with the Marvel Comic API? As you are probably aware, Marvel is big. They have been around since the 70's and their <br>
+                library is <strong>HUGE</strong>. We will be using the API to make calls to their resources to learn more about their vast roster of superheroes. </p>
+            <h1>Making a Call</h1>
+            <p>Now that we know what an API is let's make a call to the Marvel Comics API.<br>
+                <script async src="//jsfiddle.net/amac714/v7dqntpu/embed/js/"></script></p>
+            <p>Currently, the Marvel API accept only <code>HTTP GET</code> requests. This means that we have to use the keyword <code>GET</code> when we open a request to<br>
+            the endpoint <code>https://gateway.marvel.com/v1/public/comics</code>. An endpoint is a unique URL used to communicate with an API. In this case, we are<br>
+                making a call to the comics endpoint. This endpoint will return full views of comics in Marvel's library.</p>
+            <p>The <code>true</code> argument in the script states that we are making an asynchronous call. That means that we must add an event listener that will<br>
+            wait until the request loads and then parse the response and log it in the console. If the request fails, then an error is logged. The last part of the script,<br>
+            <code>request.send(null);</code> simply states that we are not sending any additional data to our request.</p>
+            <h1>Coming Up</h1>
+            <p>We now know how to make a request to the Marvel Comics API. Next, we will look at the response we get from the call.</p>
+
+
+            <a href="gettingstarted.html" class="button big scrolly">Previous</a>
+            <a href="response.html" class="button big scrolly">Next</a>
+
+
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

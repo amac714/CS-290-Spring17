@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Response</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <h1>Response Body</h1>
+            <h5>This page will look at the response we get from the Marvel Comics API</h5>
+            <p>Its important to note that the call we made in the previous page wont actually return anything as we did not use our API key.<br>
+                Let's modify it so that we'll get an actual response:</p>
+            <script async src="//jsfiddle.net/amac714/v7dqntpu/1/embed/js/"></script>
+            <p>Notice now we are using our public key <em>(For the purpose of this guide, we are displaying our key. In reality never do this!)</em> and we<br>
+            have appended it to the endpoint. This will give us a result like this:</p>
+            <p><img src="images/comicsreponse.png" height="636" width="745"/></p>
+            <p>The result from calling the API will be in JSON format, but here we've parsed it into a JavaScript object. The comics endpoint returns all the comics<br>
+            in Marvel's library. If I had included the full result, we would have had to scroll down for ages to get to the bottom.</p>
+            <p>Besides the Comics endpoint, Marvel offers five other resource types using the API. They are:<br>
+             <ul>
+                <li>Comic series</li>
+                <li>Comic stories</li>
+                <li>Comic events and crossovers</li>
+                <li>Creators</li>
+                <li>Characters</li>
+            </ul></p>
+            <p>Each of these resources have the same base endpoint: <code>https://gateway.marvel.com/v1/public/</code>. For the rest of this guide, we will focus on the Characters resource.</p>
+            <h1>Building an Application</h1>
+            <p>We still haven't done anything with this API. So, let's change that. Let's look up a hero.</p>
+            <p>Here's the format of the URL we can build to look one up: <code>https://gateway.marvel.com/v1/public/characters?name=hero-name&apikey=publicKey</code><br>
+            Once we receive the response, here is how we can access their bio (if they have one): <code>response.data.results["0"].description;</code></p>
+            <p>Let's try it out! Look up Spider-man: </p>
+            <form>
+                <fieldset>
+                    <label for="marvel"></label>
+                    <input type="text" id="marvel">
+                </fieldset>
+                <input type="submit" id="submitHero">
+            </form>
+            <p><span id="name"></span><br><span id="bio"></span><br></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

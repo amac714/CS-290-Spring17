@@ -1,0 +1,13 @@
+#outer {
+    background-color: black;
+
+}
+#logo {
+    display: block;
+    margin: auto;
+    width: 55%;
+}
+
+#comic{
+    overflow: auto;
+}
