@@ -1,0 +1,26 @@
+<h1>Workout Tracker</h1>
+<p>Enter your workout below</p>
+<form method="get"  action="/insert" class="add">
+    <fieldset>
+
+        <label for="name">Name:</label>
+        <input name="name" class="name" type="text" placeholder="Name" required>
+
+        <label for="reps">Reps:</label>
+        <input name="reps" type="number" class="reps" placeholder="Reps">
+
+        <label for="weight">Weight:</label>
+        <input name="weight" type="number" class="weight" placeholder="Weight">
+
+        <label for="date">Date:</label>
+        <input name="date" type="date" class="date">
+
+        <label for="unit">Units:</label>
+        <input name="unit" type="number" max="1" min="0" class="unit">
+
+        <input type="submit" class="btn-submit add-workout">
+    </fieldset>
+</form>
+<div class="edit-container"></div>
+<h3>Your workouts</h3>
+<div class="table-container"></div>
